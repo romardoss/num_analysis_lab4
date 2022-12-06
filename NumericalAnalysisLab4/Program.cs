@@ -6,7 +6,10 @@ namespace NumericalAnalysisLab4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Function f = new();
+            f.PrintX();
+            Console.WriteLine();
+            f.PrintFunctionValues();
         }
     }
 }
