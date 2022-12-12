@@ -4,14 +4,14 @@ namespace NumericalAnalysisLab4
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Function f = new();
-            f.PrintX();
+            Console.Write("Значення аргументiв: ");
+            Print.Array(Function.X);
             Console.WriteLine();
-            f.PrintFunctionValues();
+            Console.Write("Значення функції за даних аргументiв: ");
+            Print.Array(Function.GetFunctionValues());
             Console.WriteLine();
-            Equation eq = new Equation();
             Equation.PrintMainEquation();
         }
     }

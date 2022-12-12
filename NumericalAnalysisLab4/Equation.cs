@@ -7,22 +7,21 @@ namespace NumericalAnalysisLab4
     {
         public static string GetMainEquation()
         {
-            Function f = new();
-            double[] doubles = f.GetFunctionValues();
+            double[] doubles = Function.GetFunctionValues();
             StringBuilder builder = new();
             for(int i = 0; i < doubles.Length; i++)
             {
-                builder.Append($"(x-{doubles[i]})");
+                builder.Append($"(x-{Print.Number(doubles[i])})");
             }
             builder.AppendLine();
             for (int i = 0; i < doubles.Length*2; i++)
             {
-                builder.Append("---------");
+                builder.Append("------");
             }
             builder.AppendLine();
             for (int i = 0; i < doubles.Length; i++)
             {
-                builder.Append($"(xj-{doubles[i]})");
+                builder.Append($"(xj-{Print.Number(doubles[i])})");
             }
             builder.AppendLine();
             return builder.ToString();
