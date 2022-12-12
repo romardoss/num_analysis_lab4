@@ -12,7 +12,7 @@ namespace NumericalAnalysisLab4
             f.PrintFunctionValues();
             Console.WriteLine();
             Equation eq = new Equation();
-            eq.PrintMainEquation();
+            Equation.PrintMainEquation();
         }
     }
 }

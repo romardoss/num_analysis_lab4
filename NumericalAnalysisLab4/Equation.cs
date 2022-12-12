@@ -5,7 +5,7 @@ namespace NumericalAnalysisLab4
 {
     internal class Equation
     {
-        public string GetMainEquation()
+        public static string GetMainEquation()
         {
             Function f = new();
             double[] doubles = f.GetFunctionValues();
@@ -28,7 +28,7 @@ namespace NumericalAnalysisLab4
             return builder.ToString();
         }
 
-        public void PrintMainEquation()
+        public static void PrintMainEquation()
         {
             Console.WriteLine(GetMainEquation());
         }
